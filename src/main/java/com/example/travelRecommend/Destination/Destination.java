@@ -1,0 +1,49 @@
+package com.example.travelRecommend.Destination;
+
+import com.example.travelRecommend.common.enums.*;
+import jakarta.persistence.*;
+
+@Entity
+public class Destination {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
+
+        private String name;
+
+        @Enumerated(EnumType.STRING)
+        private tempType temperature;
+
+        @Enumerated(EnumType.STRING)
+        private durationType duration;
+
+        @Enumerated(EnumType.STRING)
+        private budgetType budget;
+
+        @Enumerated(EnumType.STRING)
+        private areaType area;
+
+        @Enumerated(EnumType.STRING)
+        private groupType groupType;
+
+        @Enumerated(EnumType.STRING)
+        private activityType activity;
+
+        @Enumerated(EnumType.STRING)
+        private cuisineType cuisine;
+
+        @Enumerated(EnumType.STRING)
+        private transportType transport;
+
+        @Enumerated(EnumType.STRING)
+        private accommodationType accommodation;
+
+        @Enumerated(EnumType.STRING)
+        private seasonType season;
+
+        @Enumerated(EnumType.STRING)
+        private countryType country;
+
+
+
+}
