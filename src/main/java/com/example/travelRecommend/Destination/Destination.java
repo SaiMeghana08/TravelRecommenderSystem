@@ -2,8 +2,16 @@ package com.example.travelRecommend.Destination;
 
 import com.example.travelRecommend.common.enums.*;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Destination {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
