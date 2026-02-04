@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class DataLoader {
+public class DestDataLoader {
     @Bean
     CommandLineRunner loadDestinations(DestinationRepo repo) {
         return args -> {
